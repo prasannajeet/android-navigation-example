@@ -1,4 +1,4 @@
-# Sample App for Android navigation component
+# Sample App for Android Navigation Architecture Component
 
 This sample application written in pure Kotlin explains how to use the new Android Navigation architecture component which is part of the Android Jetpack in order to easily create navigation graphs similar to Storyboards in iOS
 
