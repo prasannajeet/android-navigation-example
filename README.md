@@ -2,7 +2,7 @@
 
 This sample application written in pure Kotlin explains how to use the new Android Navigation architecture component which is part of the Android Jetpack in order to easily create navigation graphs similar to Storyboards in iOS
 
-_**Since Navigation architecture component is in alpha, this project will be constantly updated to consume the latest builds**_
+_**Since Navigation architecture component is in alpha, this repository will be constantly updated to consume the latest builds**_
 
 This sample app has used 3 navigation pathways
 1. From fragment to activity
