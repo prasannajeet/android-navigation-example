@@ -2,18 +2,17 @@ package com.example.prasa.navsample.ui.welcome
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.fragment.app.Fragment
 import com.example.prasa.navsample.R
-import kotlinx.android.synthetic.main.fragment_welcome_with_age.*
 
 /**
  * A simple [Fragment] subclass.
  *
  */
-class WelcomeMeWithAgeFragment : Fragment() {
+class WelcomeMeWithAgeFragment : androidx.fragment.app.Fragment() {
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {

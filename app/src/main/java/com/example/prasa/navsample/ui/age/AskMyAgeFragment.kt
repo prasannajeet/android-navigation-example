@@ -2,20 +2,18 @@ package com.example.prasa.navsample.ui.age
 
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.fragment.findNavController
+import androidx.fragment.app.Fragment
 import com.example.prasa.navsample.R
 import com.example.prasa.navsample.ui.main.MainFragment
-import kotlinx.android.synthetic.main.fragment_age.*
 
 /**
  * A simple [Fragment] subclass.
  *
  */
-class AskMyAgeFragment : Fragment() {
+class AskMyAgeFragment : androidx.fragment.app.Fragment() {
 
     private lateinit var name: String
 
