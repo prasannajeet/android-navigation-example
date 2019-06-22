@@ -24,7 +24,7 @@ class WelcomeMeWithAgeFragment : androidx.fragment.app.Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val fragmentArgs = WelcomeMeWithAgeFragmentArgs.fromBundle(arguments)
+        val fragmentArgs = WelcomeMeWithAgeFragmentArgs.fromBundle(arguments!!)
         val name = fragmentArgs.myname
         val age = fragmentArgs.myage
 
