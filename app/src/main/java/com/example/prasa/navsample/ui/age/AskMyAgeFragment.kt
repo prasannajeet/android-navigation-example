@@ -27,7 +27,7 @@ class AskMyAgeFragment : androidx.fragment.app.Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        name = AskMyAgeFragmentArgs.fromBundle(arguments).myname
+        name = AskMyAgeFragmentArgs.fromBundle(arguments!!).myname
         helloEnterAge.hint = "Hello $name! What's your age?"
 
         buttonWelcomeWithAge.setOnClickListener {
@@ -36,8 +36,8 @@ class AskMyAgeFragment : androidx.fragment.app.Fragment() {
                 helloEnterAge.error = "Please enter age"
             } else {
                 val action = AskMyAgeFragmentDirections.actionAgeFragmentToWelcomeWithAgeFragment()
-                action.setMyage(age)
-                action.setMyname(name)
+                action.myage = age
+                action.myname = name
                 findNavController().navigate(action)
             }
         }

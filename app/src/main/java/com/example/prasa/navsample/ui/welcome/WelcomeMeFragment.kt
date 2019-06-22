@@ -23,7 +23,7 @@ class WelcomeMeFragment : androidx.fragment.app.Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        val name = WelcomeMeFragmentArgs.fromBundle(arguments).myname
+        val name = WelcomeMeFragmentArgs.fromBundle(arguments!!).myname
         welcomeName.text = "Welcome $name!"
     }
 }
